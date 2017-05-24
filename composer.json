@@ -1,0 +1,14 @@
+{
+    "name": "ybelenko/ogrn",
+    "description": "Tiny library for validating OGRN and OGRNIP business identifiers in Russia.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuriy Belenko",
+            "email": "yura-bely@mail.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
