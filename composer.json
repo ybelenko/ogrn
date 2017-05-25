@@ -47,6 +47,6 @@
         "phpcbf": "phpcbf --standard=phpcs.xml --extensions=php --ignore=*/vendor/*,*/tests/* --encoding=utf-8 src/",
         "phpmd": "phpmd src/ text cleancode,codesize,controversial,design,unusedcode",        
         "phpunit": "phpunit tests/",
-        "coverage": "phpunit tests/ --whitelist src/ogrn/ --coverage-html report/"
+        "coverage": "phpunit tests/ --whitelist src/ogrn/ --coverage-html coverage/"
     }
 }
