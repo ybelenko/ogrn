@@ -1,4 +1,8 @@
 # OGRN
+
+[![Latest Stable Version](https://poser.pugx.org/ybelenko/ogrn/v/stable)](https://packagist.org/packages/ybelenko/ogrn)
+[![License](https://poser.pugx.org/ybelenko/ogrn/license)](https://packagist.org/packages/ybelenko/ogrn)
+    
 Tiny PHP library for validating OGRN(ОГРН) and OGRNIP(ОГРНИП) business identifiers in Russia. 
 It just verifies number length and last control digit, so if identifier passes validation it doesn't 
 mean that it exists in a real world. If you need to check that OGRN or OGRNIP exists visit 
