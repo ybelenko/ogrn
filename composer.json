@@ -10,6 +10,7 @@
         "business",
         "identifiers"
     ],
+    "homepage": "https://github.com/ybelenko/ogrn",
     "authors": [
         {
             "name": "Yuriy Belenko",
@@ -37,15 +38,15 @@
         }
     },
     "scripts": {
-        "test": [
-            "@phpunit"
+        "test": [            
+            "@phpunit",
+            "@phpcs",
+            "@phpmd"
         ],
-        "phpcs": "phpcs --extensions=php --ignore=*/vendor/*,*/tests/* --encoding=utf-8 src/ -p",
-        "phpcs2": "vendor/bin/phpcs --encoding=utf-8 src/smsgorod/Abonent.php -p",
-        "phpcbf": "phpcbf --extensions=php --ignore=*/vendor/*,*/tests/* --encoding=utf-8 src/ --no-patch",
-        "phpmd": "phpmd src/ text cleancode,codesize,controversial,design,naming,unusedcode",        
+        "phpcs": "phpcs --standard=phpcs.xml --extensions=php --ignore=*/vendor/*,*/tests/* --encoding=utf-8 src/ -p -s",
+        "phpcbf": "phpcbf --standard=phpcs.xml --extensions=php --ignore=*/vendor/*,*/tests/* --encoding=utf-8 src/",
+        "phpmd": "phpmd src/ text cleancode,codesize,controversial,design,unusedcode",        
         "phpunit": "phpunit tests/",
-        "coverage": "phpunit tests/ --whitelist src/ogrn/ --coverage-html report/",
-        "phpdoc": "phpdoc -f ./src/smsgorod/Abonent.php -t ./docs/"
+        "coverage": "phpunit tests/ --whitelist src/ogrn/ --coverage-html report/"
     }
 }
