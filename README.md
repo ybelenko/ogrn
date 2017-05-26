@@ -1,6 +1,8 @@
 # OGRN
 
 [![Latest Stable Version](https://poser.pugx.org/ybelenko/ogrn/v/stable)](https://packagist.org/packages/ybelenko/ogrn)
+[![Build Status](https://travis-ci.org/ybelenko/ogrn.svg?branch=master)](https://travis-ci.org/ybelenko/ogrn)
+[![Coverage Status](https://coveralls.io/repos/github/ybelenko/ogrn/badge.svg?branch=master)](https://coveralls.io/github/ybelenko/ogrn?branch=master)
 [![License](https://poser.pugx.org/ybelenko/ogrn/license)](https://packagist.org/packages/ybelenko/ogrn)
     
 Tiny PHP library for validating OGRN(ОГРН) and OGRNIP(ОГРНИП) business identifiers in Russia. 
