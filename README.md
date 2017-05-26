@@ -9,7 +9,8 @@ mean that it exists in a real world. If you need to check that OGRN or OGRNIP ex
 [http://egrul.nalog.ru](http://egrul.nalog.ru).
 
 ## Installation
-With composer  
+It's recommended that you use [Composer](https://getcomposer.org/) to install.
+
 ```sh
 $ composer require ybelenko/ogrn
 ```
@@ -40,8 +41,13 @@ $ogrn = '1127746509780'; // is good
 echo $ogrn; // 1127746509780
 ```
 
-## Run tests
+## Tests
+To execute the test suite, you'll need to clone current repo and
+install it with dev dependencies:
+
 ```sh
-$ composer require phpunit/phpunit --dev
-$ composer exec phpunit tests/
+$ git clone https://github.com/ybelenko/ogrn
+$ cd ogrn
+$ composer install
+$ composer test
 ```

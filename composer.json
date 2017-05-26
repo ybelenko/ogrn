@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ybelenko\\Ogrn\\": "src/ogrn/"
+            "Ybelenko\\Ogrn\\": "src/ogrn"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ybelenko\\Ogrn\\": "tests/"
+            "Ybelenko\\Ogrn\\": "tests"
         }
     },
     "scripts": {
@@ -43,10 +43,10 @@
             "@phpcs",
             "@phpmd"
         ],
-        "phpcs": "phpcs --standard=phpcs.xml --extensions=php --ignore=*/vendor/*,*/tests/* --encoding=utf-8 src/ -p -s",
-        "phpcbf": "phpcbf --standard=phpcs.xml --extensions=php --ignore=*/vendor/*,*/tests/* --encoding=utf-8 src/",
+        "phpunit": "phpunit",
+        "phpcs": "phpcs --standard=phpcs.xml --extensions=php --encoding=utf-8 src/ -p -s",        
         "phpmd": "phpmd src/ text cleancode,codesize,controversial,design,unusedcode",        
-        "phpunit": "phpunit tests/",
-        "coverage": "phpunit tests/ --whitelist src/ogrn/ --coverage-html coverage/"
+        "phpcbf": "phpcbf --standard=phpcs.xml --extensions=php --encoding=utf-8 src/",
+        "coverage": "phpunit --coverage-clover clover.xml"
     }
 }
