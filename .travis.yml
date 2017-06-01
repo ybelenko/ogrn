@@ -10,7 +10,10 @@ php:
   
 install: composer install -n
 
-before_script: composer require satooshi/php-coveralls:1.* -n
+before_script: 
+  - composer require satooshi/php-coveralls:1.* -n
+  # need to enable xdebug in hhvm for code coverage
+  - if [[ $TRAVIS_PHP_VERSION =~ ^hhvm ]]; then echo 'xdebug.enable = On' >> /etc/hhvm/php.ini; fi
 
 script: ./vendor/bin/phpunit --coverage-clover clover.xml
 

@@ -51,7 +51,8 @@ class OgrnipTest extends \PHPUnit_Framework_TestCase {
         return array(
             array("1127746509780"),
             array("5077746887312"),
-            array("5077746887390")
+            array("5077746887390"),
+            array("1027200000959")
         );
     }
     
