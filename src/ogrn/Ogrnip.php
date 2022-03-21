@@ -16,7 +16,7 @@
  * @version  GIT: <https://github.com/ybelenko/ogrn>
  * @link     https://github.com/ybelenko/ogrn
  */
- 
+
 namespace Ybelenko\Ogrn;
 
 /**
@@ -50,7 +50,7 @@ namespace Ybelenko\Ogrn;
  * @version  Release: @package_version@
  * @link     https://github.com/ybelenko/ogrn
  */
- 
+
 class Ogrnip
 {
     /**
@@ -67,7 +67,12 @@ class Ogrnip
             return false;
         }
         // remainder after division
-        $rem = gmp_intval( gmp_mod( substr($id, 0, -1), 13 ) );
+        $rem = gmp_intval(
+            gmp_mod(
+                substr($id, 0, -1),
+                13
+            )
+        );
         if (gmp_cmp($rem, 9) === 1) {
             $rem -= 10;
         }

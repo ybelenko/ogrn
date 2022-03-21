@@ -16,7 +16,7 @@
  * @version  GIT: <https://github.com/ybelenko/ogrn>
  * @link     https://github.com/ybelenko/ogrn
  */
- 
+
 namespace Ybelenko\Ogrn;
 
 /**
@@ -58,10 +58,10 @@ namespace Ybelenko\Ogrn;
  * @version  Release: @package_version@
  * @link     https://github.com/ybelenko/ogrn
  */
- 
+
 class Ogrn
 {
-    
+
     /**
      * Validates identifier length and last control digit.
      *
@@ -76,7 +76,12 @@ class Ogrn
             return false;
         }
         // remainder after division
-        $rem = gmp_intval( gmp_mod( substr($id, 0, -1), 11 ) );
+        $rem = gmp_intval(
+            gmp_mod(
+                substr($id, 0, -1),
+                11
+            )
+        );
         if (gmp_cmp($rem, 10) === 0) {
             $rem -= 10;
         }
