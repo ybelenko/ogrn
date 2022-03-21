@@ -1,7 +1,7 @@
 # OGRN
 
 [![Latest Stable Version](https://poser.pugx.org/ybelenko/ogrn/v/stable)](https://packagist.org/packages/ybelenko/ogrn)
-[![Build Status](https://travis-ci.org/ybelenko/ogrn.svg?branch=master)](https://travis-ci.org/ybelenko/ogrn)
+[![Build Status](https://github.com/ybelenko/ogrn/actions/workflows/ci.yml/badge.svg)](https://github.com/ybelenko/ogrn/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/ybelenko/ogrn/badge.svg?branch=master)](https://coveralls.io/github/ybelenko/ogrn?branch=master)
 [![License](https://poser.pugx.org/ybelenko/ogrn/license)](https://packagist.org/packages/ybelenko/ogrn)
     
